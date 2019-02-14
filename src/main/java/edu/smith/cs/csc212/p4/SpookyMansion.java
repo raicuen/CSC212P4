@@ -57,6 +57,8 @@ public class SpookyMansion implements GameWorld {
 		
 		Place secretRoom = insert(Place.create("secretRoom", "You have found the secret room."));
 		secretRoom.addExit(new Exit("hallway0", "There is a long hallway."));
+        secretRoom.addExit(new Exit("basement", "There is another path that branches off...where might this lead?"));
+
 		
 		int hallwayDepth = 3;
 		int lastHallwayPart = hallwayDepth - 1;
